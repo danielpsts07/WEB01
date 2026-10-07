@@ -1,0 +1,25 @@
+body{
+    background-color: #dedede;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,h2{
+    color: gray;
+}
+
+p{
+    color: orange;
+}
+
+#subtitulo{
+    color:rgb(192, 119, 24);
+}
+
+.subtitulo{
+    background-color: #fff3cd;
+    color: #664d03;
+    padding: 8px;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+}
+
