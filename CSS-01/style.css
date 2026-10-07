@@ -30,3 +30,26 @@ p{
     background-color: lightgray;
     width: 300px;
 }
+
+.lista1{
+    list-style-type:square ;
+}
+
+.lista2{
+    list-style-type:upper-roman;
+}
+
+.tabela{
+    border-collapse:collapse;
+    width: 30%;
+}
+
+.tabela th, .tabela td{
+    border: 1px solid #f00909;
+    padding: 8px;
+    text-align: center;
+}
+
+.caixa4{
+    background-color: #dedede;
+}
