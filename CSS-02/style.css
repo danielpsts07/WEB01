@@ -12,7 +12,7 @@
 }
 
 .tabela th, .tabela td{
-    border: 1px solid #999;
+    border: 1px solid #f00909;
     padding: 8px;
     text-align: center;
 }
