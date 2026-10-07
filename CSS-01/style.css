@@ -1,6 +1,9 @@
 body{
     background-color: #dedede;
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1,h2{
@@ -23,3 +26,7 @@ p{
     border-radius: 4px;
 }
 
+.caixa3{
+    background-color: lightgray;
+    width: 300px;
+}
