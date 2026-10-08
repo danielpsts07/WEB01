@@ -11,10 +11,17 @@
         <img src="assets/logo.jpeg" alt="imagem logo">
         <h1>Cine Catálogo</h1>
         <h2>Seu catálogo de filmes favorito!</h2>
+        <nav>
+            <ul>
+                <li><a href="#gradeFilmes">Filmes</a></li>
+                <li><a href="#outrosLançamentos">Outros Lançamentos</a></li>
+                <li><a href="#sobreContato">Sobre/Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
-        <div class="grade">
+        <div class="grade" id="gradeFilmes">
             <div class="card destaque">
                 <img class="poster" src="assets/interstellar.jpg" alt="capa interstellar">
                 <h3 class="titulo">interstellar</h3>
@@ -68,15 +75,80 @@
                     <li>Fantasia</li>
                 </ul>
             </div>
+        </div>
 
+        <div id="outrosLançamentos">
+            <h2>Outros Titulos:</h2>
             <table class="Tabela">
-                
+                <tr>
+                    <th>Filme</th>
+                    <th>Ano</th>
+                    <th>Nota</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Obsessão</td>
+                    <td>2026</td>
+                    <td>8.2</td>
+                    <td>Aclamado pela crítica e entre as 10 maiores bilheterias do ano</td>
+                </tr>
+                <tr>
+                    <td>Toy Story 5</td>
+                    <td>2026</td>
+                    <td>8.3</td>
+                    <td>Disponível para aluguel ou compra digital</td>
+                </tr>
+                <tr>
+                    <td>Frankenstein</td>
+                    <td>2025</td>
+                    <td>7.5</td>
+                    <td>Vencedor de Figurino, Maquiagem e Design de Produção</td>
+                </tr>
+                <tr>
+                    <td>Pecadores</td>
+                    <td>2025</td>
+                    <td>7.6</td>
+                    <td>Vencedor de Oscars, incluindo Melhor Ator</td>
+                </tr>
+                <tr>
+                    <td>Uma Batalha Após a Outra</td>
+                    <td>2025</td>
+                    <td>7.6</td>
+                    <td>Vencedor do Oscar de Melhor Filme</td>
+                </tr>
+                <tr>
+                    <td>O Drama</td>
+                    <td>2026</td>
+                    <td>7.2</td>
+                    <td>Entre os melhores do ano até agora</td>
+                </tr>
             </table>
         </div>
     </section>
 
-    <footer>
-
+    <footer id="sobreContato">
+        <div>
+            <h2>Sobre:</h2>
+            <p>Catálogo de filmes feito por estudante de Engenharia de Software com objetivo de praticar HTML + CSS + JS <br> Projeto acadêmico da disciplina de Desenvolvimento Web I da Universidade do Estado da Bahia (UNEB).</p>
+            <img src="assets/uneb-logo-png_seeklogo-144838.png" alt="">
+        </div>
+        <div>
+            <h2>Contato</h2>
+            <p>Email: </p>
+            <p>Telefone: (99) 9 9999-9999</p>
+            <h3>Redes Socias:</h3>
+            <div class="social">
+                <img class="icone" src="assets/instagram.png" alt="">
+                <span>@perfil</span>
+            </div>
+            <div class="social">
+                <img class="icone" src="assets/Xlogo.png" alt="">
+                <span>@perfil</span>
+            <div class="social">
+                <img class="icone" src="assets/youtube-circle-icon-png-logo-14.png" alt="">
+                <span>@perfil</span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
