@@ -1,18 +1,59 @@
-.lista1{
-    list-style-type:square ;
+*{
+    margin: 0;
 }
 
-.lista2{
-    list-style-type:upper-roman;
+body{
+    background-color: rgb(92, 92, 92);
 }
 
-.tabela{
-    border-collapse:collapse;
-    width: 30%;
+
+header{
+    background-image: url(assets/backgroundHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    .tituloSubtitulo{
+        color: #dedede;
+        font-family: "Isometra", serif;
+        text-shadow: 4px 4px 8px black;
+       text-align: center;
+    }
+
+    nav{
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: lightgrey;
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-family: "Isometra", serif;
+        font-size: xx-small;
+    }
 }
 
-.tabela th, .tabela td{
-    border: 1px solid #f00909;
-    padding: 8px;
-    text-align: center;
+
+
+.grade{
+    display: flex;
+    gap: 50px;
+    margin: 100px;
+    background-color: rgb(121, 114, 114);
+    
+    .card.destaque{
+
+    } 
+    .poster{
+        width: 300px;
+    }
+
 }
