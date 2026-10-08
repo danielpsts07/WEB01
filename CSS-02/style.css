@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgb(92, 92, 92);
+    background-color: #242a36;
 }
 
 
@@ -42,18 +42,67 @@ header{
 }
 
 
+.card.destaque{
+    display: flex;
+    margin: 100px;
+    background-color: darkgrey;
+    padding: 80px;
+    border-radius: 100px;
+    gap: 50px;
+    
+    .poster{
+        width: 500px;
+        border: 3pc solid #2e1c2b;
+        border-radius: 30px;
+    }
+
+    .tituloPoster{
+       font-family: "Isometra", serif;
+       font-size: 115px;
+    }
+
+    .detalhes{
+        display: flex;
+        gap: 50px;
+    }
+
+    .descrição{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ano{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+    }
+    
+    
+    .genero{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        color: #242a36;
+    }
+
+    .sinopse{
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+    }
+     
+
+} 
 
 .grade{
     display: flex;
+    
     gap: 50px;
     margin: 100px;
     background-color: rgb(121, 114, 114);
     
-    .card.destaque{
-
-    } 
     .poster{
         width: 300px;
     }
-
 }
