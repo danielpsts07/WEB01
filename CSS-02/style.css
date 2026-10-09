@@ -3,13 +3,12 @@
 }
 
 body{
-    background-color: #242a36;
+    background-color: #492718;
 }
 
 
 header{
-    background-image: url(assets/backgroundHeader.jpg);
-    background-repeat: no-repeat;
+    background-image: url(assets/backgroundHeader.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 40vh;
@@ -23,7 +22,7 @@ header{
         color: #dedede;
         font-family: "Isometra", serif;
         text-shadow: 4px 4px 8px black;
-       text-align: center;
+        text-align: center;
     }
 
     nav{
@@ -31,7 +30,7 @@ header{
         gap: 15px;
         padding: 10px;
         border-radius: 15px;
-        background-color: lightgrey;
+        background-color: #DDDDCF;
         list-style: none;
         position: absolute;
         bottom: 10px;
@@ -45,7 +44,7 @@ header{
 .card.destaque{
     display: flex;
     margin: 100px;
-    background-color: darkgrey;
+    background-color: #DDDDCF;
     padding: 80px;
     border-radius: 100px;
     gap: 50px;
@@ -85,7 +84,7 @@ header{
     }
 
     .sinopse{
-        background-color: #f8f9fa;
+        background-color: #C7B89C;
         padding: 20px;
         border-radius: 30px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,6 +94,21 @@ header{
 
 } 
 
+.starIcon{
+    width: 80px;
+}
+
+h2{
+    font-size: 100px;
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    text-shadow: 4px 4px 8px black;
+    color: #CDB0A1; 
+    text-decoration: underline
+;
+}
+
+
 .grade{
     display: flex;
     justify-content: center;
@@ -102,7 +116,7 @@ header{
     gap: 50px;
     padding: 40px;
     margin: 100px;
-    background-color: darkgray;
+    background-color: #DDDDCF;
     border-radius: 40px;
     
     .card{
@@ -136,3 +150,81 @@ header{
         color: #242a36;
         }
 }
+
+
+
+.tabela{
+    background-color: #DDDDCF;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    border-collapse: collapse;
+    
+
+    th, td{
+        text-align: center;
+        border: 2px solid;
+        padding: 20px;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    th{
+        background-color: #C7B89C;
+    }
+}
+ 
+.footerTitulos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+footer{
+    display: flex;
+    margin: auto;
+    background-color: #DDDDCF;
+    width: 90%;
+    border-radius: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .imgUneb{
+        width: 200px;
+        float: right;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .sobre{
+        background-color: #C7B89C;
+        margin: 50px;
+        width: 50%;
+        font-size: 50px;
+        text-align: justify;
+        padding: 50px;
+        border-radius: 60px;
+    }
+
+    .Contato{
+        margin: 50px;
+        width: 50%;
+        font-size: 50px;
+        background-color: #C7B89C;
+        padding: 50px;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .icone{
+        width: 50px;
+    }
+
+    
+}
+
+
