@@ -52,7 +52,7 @@ header{
     
     .poster{
         width: 500px;
-        border: 3pc solid #2e1c2b;
+        border: 10px solid #2e1c2b;
         border-radius: 30px;
     }
 
@@ -66,7 +66,7 @@ header{
         gap: 50px;
     }
 
-    .descrição{
+    .descriçãoDestaque{
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -97,12 +97,42 @@ header{
 
 .grade{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
     gap: 50px;
+    padding: 40px;
     margin: 100px;
-    background-color: rgb(121, 114, 114);
+    background-color: darkgray;
+    border-radius: 40px;
     
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     .poster{
         width: 300px;
+        border: 10px solid #2e1c2b;
+        border-radius: 30px;
     }
+
+    .tituloPoster{
+        font-family: "Isometra", serif;
+        font-size: 15px;
+    }
+
+    .ano{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .genero{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #242a36;
+        }
 }
