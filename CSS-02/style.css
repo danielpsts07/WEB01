@@ -84,6 +84,7 @@ header{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 40px;
         color: #242a36;
+        list-style-type: square;
     }
 
     .sinopse{
