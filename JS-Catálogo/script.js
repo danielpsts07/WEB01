@@ -11,7 +11,8 @@ let filmes = [
 let totalFilmes = filmes.length;
 let contador = document.getElementById("contador");
 contador.innerHTML += "Total de filmes: " + totalFilmes;
-function mostrarFilmes(filmes){
+
+function mostrarFilmes(){
     let catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
@@ -38,5 +39,18 @@ function mostrarFilmes(filmes){
 
     }
 }
+mostrarFilmes(filmes);
 
-mostrarFilmes(filmes)
+
+
+let campoBusca = document.getElementById("busca")
+campoBusca.addEventListener("input",function(){
+    let letra = campoBusca.value.toLowerCase()
+    resultado = [];
+    for (let filme of filmes){
+        if(filme.titulo.toLowerCase().includes(letra)){
+            resultado.push(filme)
+        }
+    }
+    mostrarFilmes(resultado)
+});
