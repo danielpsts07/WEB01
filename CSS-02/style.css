@@ -6,7 +6,14 @@ body{
     background-color: #492718;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
 
+a:hover{
+    color: white;
+}
 header{
     background-image: url(assets/backgroundHeader.jpeg);
     background-size: cover;
