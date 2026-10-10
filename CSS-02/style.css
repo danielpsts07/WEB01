@@ -10,10 +10,25 @@ a{
     color: black;
     text-decoration: none;
 }
-
 a:hover{
     color: white;
 }
+
+.starIcon{
+    width: 80px;
+}
+
+.titulosSecoes{
+    font-size: 100px;
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    text-shadow: 4px 4px 8px black;
+    color: #CDB0A1; 
+    text-decoration: underline;
+}
+
+/*Cabeçalho*/
+
 header{
     background-image: url(assets/backgroundHeader.jpeg);
     background-size: cover;
@@ -50,7 +65,7 @@ header{
     }
 }
 
-
+/*Seção com o cartaz destaque*/
 .card.destaque{
     display: flex;
     margin: 100px;
@@ -105,20 +120,9 @@ header{
 
 } 
 
-.starIcon{
-    width: 80px;
-}
-
-.titulosSecoes{
-    font-size: 100px;
-    padding: 100px 20px 50px 20px;
-    text-align: center;
-    text-shadow: 4px 4px 8px black;
-    color: #CDB0A1; 
-    text-decoration: underline;
-}
 
 
+/*Grade contendo outros filmes*/
 .grade{
     display: flex;
     justify-content: center;
@@ -165,7 +169,7 @@ header{
 }
 
 
-
+/*Tabela com mais recomendações de filmes, ano,nota e status de cada*/
 .tabela{
     background-color: #DDDDCF;
     width: 90%;
@@ -187,14 +191,7 @@ header{
     }
 }
  
-.footerTitulos{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-
+/*Rodapé / seção final da pagina*/
 footer{
     display: flex;
     margin: auto;
