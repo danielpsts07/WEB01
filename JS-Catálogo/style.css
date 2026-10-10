@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #492718;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
+.starIcon{
+    width: 80px;
+}
+
+.footerTitulos{
+    display: flex;
+    justify-content: center;
+    gap: 27vw;
+}
+.titulosSecoes{
+    font-size: 100px;
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    text-shadow: 4px 4px 8px black;
+    color: #CDB0A1; 
+    text-decoration: underline;
+
+}
+
+/*Cabeçalho*/
+
+header{
+    background-image: url(assets/backgroundHeader.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    .tituloSubtitulo{
+        color: #dedede;
+        font-family: "Isometra", serif;
+        text-shadow: 4px 4px 8px black;
+        text-align: center;
+        h2{
+            font-style: italic;
+        }
+    }
+
+    nav{
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #DDDDCF;
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-family: "Isometra", serif;
+        font-size: xx-small;
+    }
+}
+
+/*Seção com o cartaz destaque*/
+.card.destaque{
+    display: flex;
+    margin: 5.2vw;
+    background-color: #DDDDCF;
+    padding: 4.2vw;
+    border-radius: 100px;
+    gap: 50px;
+    
+    .poster{
+        width: 26vw;
+        border: 10px solid #2e1c2b;
+        border-radius: 30px;
+    }
+
+    .tituloPoster{
+       font-family: "Isometra", serif;
+       font-size: 6vw;
+    }
+
+    .detalhes{
+        display: flex;
+        gap: 50px;
+    }
+
+    .descriçãoDestaque{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ano{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3.1vw;
+    }
+    
+    
+    .genero{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2.1vw;
+        color: #242a36;
+        list-style-type: square;
+    }
+
+    .sinopse{
+        background-color: #C7B89C;
+        padding: 20px;
+        border-radius: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.7vw;
+    }
+     
+
+} 
+
+
+
+/*Grade contendo outros filmes*/
+.grade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.6vw;
+    padding: 2.1vw;
+    margin:5.2vw;
+    background-color: #DDDDCF;
+    border-radius: 40px;
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        background-color: #C7B89C;
+        border-radius: 40px;
+    }
+    .poster{
+        width: 15.6vw;
+        border: 10px solid #2e1c2b;
+        border-radius: 30px;
+    }
+
+    .tituloPoster{
+        font-family: "Isometra", serif;
+        font-size: 0.8vw;
+    }
+
+    .ano{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .genero{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #242a36;
+        }
+}
+
+
+/*Tabela com mais recomendações de filmes, ano,nota e status de cada*/
+.tabela{
+    background-color: #DDDDCF;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    border-collapse: collapse;
+    
+
+    th, td{
+        text-align: center;
+        border: 2px solid;
+        padding: 20px;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    th{
+        background-color: #C7B89C;
+    }
+}
+ 
+/*Rodapé / seção final da pagina*/
+footer{
+    display: flex;
+    margin: auto;
+    background-color: #DDDDCF;
+    width: 90%;
+    border-radius: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .imgUneb{
+        width: 200px;
+        float: right;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .sobre{
+        background-color: #C7B89C;
+        margin: 50px;
+        width: 50%;
+        font-size: 2.6vw;
+        text-align: justify;
+        padding: 50px;
+        border-radius: 60px;
+    }
+
+    .Contato{
+        margin: 50px;
+        width: 50%;
+        font-size: 2.6vw;
+        background-color: #C7B89C;
+        padding: 50px;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .icone{
+        width: 50px;
+    }
+
+    
+}
+
+

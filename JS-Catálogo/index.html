@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Cabeçalho da pagina-->
+
+    <header>
+        <div class="tituloSubtitulo">
+            <h1>Cine Catálogo</h1>
+            <h2>Seu catálogo de filmes favorito!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#gradeFilmes">Filmes</a></li>
+                <li><a href="#outrosLançamentos">Outros Lançamentos</a></li>
+                <li><a href="#sobreContato">Sobre/Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="titulosSecoes"><img class="starIcon" src="assets/2117160.webp" alt="">Destaque da Semana<img class="starIcon" src="assets/2117160.webp" alt=""></h2>
+
+        <!--Seção de destaque-->
+        <div class="card destaque">
+            <img class="poster" src="assets/interstellar.jpg" alt="capa interstellar">
+            <div class="descriçãoDestaque">
+                <h3 class="tituloPoster">Interstellar</h3>
+                <div class="detalhes">
+                    <h3 class="ano">2014</h3>
+                    <ul class="genero">
+                        <li>Ficção Cientifica</li>
+                        <li>Drama</li>
+                    </ul>
+                </div>
+                <p class="sinopse">Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.</p>
+            </div>
+        </div>
+
+        <!--seção dos filmes em cartaz-->
+        <h2 id="gradeFilmes" class="titulosSecoes">Nossos Filmes:</h2>
+        <div class="grade" >
+            <div class="card">
+                <img class="poster" src="assets/homemaranhasemvolta.png" alt="">
+                <h3 class="tituloPoster">Homem-Aranha: Sem Volta para Casa</h3>
+                <h3 class="ano">2021</h3>
+                <ul class="genero">
+                    <li>Aventura</li>
+                    <li>Ação</li>
+                    <li>Fantasia</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <img class="poster" src="assets/VingadoresUltimato" alt="">
+                <h3 class="tituloPoster">Vingadores: Ultimato</h3>
+                <h3 class="ano">2019</h3>
+                
+                <ul class="genero">
+                    <li>Aventura</li>
+                    <li>Ação</li>
+                    <li>Ficção Cientifica</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img class="poster" src="assets/minhaMãePeça3.jpg" alt="">
+                <h3 class="tituloPoster">Minha Mãe é uma Peça 3</h3>
+                <h3 class="ano">2019</h3>
+                <ul class="genero">
+                    <li>Comédia</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img class="poster" src="assets/carros3.jpg" alt="">
+                <h3 class="tituloPoster">Carros 3</h3>
+                <h3 class="ano">2017</h3>
+                <ul class="genero">
+                    <li>Animação</li>
+                    <li>Aventura</li>
+                    <li>Família</li>
+                    <li>Fantasia</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="outrosLançamentos" class="titulosSecoes">Outros Titulos:</h2>
+        <!--Tabela de recomendações-->
+        <table class= "tabela">
+            <tr>
+                <th>Filme</th>
+                <th>Ano</th>
+                <th>Nota</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Obsessão</td>
+                <td>2026</td>
+                <td>8.2</td>
+                <td>Aclamado pela crítica e entre as 10 maiores bilheterias do ano</td>
+            </tr>
+            <tr>
+                <td>Toy Story 5</td>
+                <td>2026</td>
+                <td>8.3</td>
+                <td>Disponível para aluguel ou compra digital</td>
+            </tr>
+            <tr>
+                <td>Frankenstein</td>
+                <td>2025</td>
+                <td>7.5</td>
+                <td>Vencedor de Figurino, Maquiagem e Design de Produção</td>
+            </tr>
+            <tr>
+                <td>Pecadores</td>
+                <td>2025</td>
+                <td>7.6</td>
+                <td>Vencedor de Oscars, incluindo Melhor Ator</td>
+            </tr>
+            <tr>
+                <td>Uma Batalha Após a Outra</td>
+                <td>2025</td>
+                <td>7.6</td>
+                <td>Vencedor do Oscar de Melhor Filme</td>
+            </tr>
+            <tr>
+                <td>O Drama</td>
+                <td>2026</td>
+                <td>7.2</td>
+                <td>Entre os melhores do ano até agora</td>
+            </tr>
+        </table>
+   
+    </section>
+    
+    <div class="footerTitulos">
+        <h2 class="titulosSecoes">Sobre:</h2>
+        <h2 class="titulosSecoes">Contato:</h2>
+    </div>
+    <footer id="sobreContato">
+        <!--seção sobre-->
+        <div class="sobre">
+            <img class="imgUneb" src="assets/uneb-logo-png_seeklogo-144838.png" alt="">
+            <p>Catálogo de filmes feito por estudante de Engenharia de Software com objetivo de praticar HTML + CSS + JS. Projeto acadêmico da disciplina de Desenvolvimento Web I da Universidade do Estado da Bahia (UNEB).</p>
+        </div>
+        <!--seção contato-->
+        <div class="Contato">
+            <p>Email: blablabla@gmail.com <br> Telefone: (99) 9 9999-9999 </p>
+            <div class="socialMedia">
+                <h3>Redes Socias:</h3>
+                <div class="social">
+                    <img class="icone" src="assets/instagram.png" alt="">
+                    <a target="_blank" href="https://instagram.com">@perfil</a>
+                </div>
+                <div class="social">
+                    <img class="icone" src="assets/Xlogo.png" alt="">
+                    <a target="_blank" href="https://x.com/home">@perfil</a>
+                </div>
+                <div class="social">
+                    <img class="icone" src="assets/youtube-circle-icon-png-logo-14.png" alt="">
+                    <a target="_blank" href="https://youtube.com">@perfil</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
