@@ -114,3 +114,12 @@ function favoritar(i){
         `
     }
 }
+
+let tituloPrincipal = document.getElementById("tituloPrincipal")
+tituloPrincipal.addEventListener("mouseenter",function(){
+    tituloPrincipal.style.color = "gold";
+})
+
+tituloPrincipal.addEventListener("mouseout",function(){
+    tituloPrincipal.style.color = "#CDB0A1";
+})
