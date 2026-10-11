@@ -10,20 +10,20 @@ let filmes = [
 ];
 let favoritosFilmes = [];
 let listaAtual = []
-listaAtual = filmes
 
-let totalFilmes = filmes.length;
+
+
+
+
 let contador = document.getElementById("contador");
-contador.innerHTML += "Total de filmes: " + totalFilmes;
-
-function mostrarFilmes(filmes){
+function mostrarFilmes(lista){
     let catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
-    for (let i = 0; i < filmes.length;i++){
+    for (let i = 0; i < lista.length;i++){
 
         let selo;
-        if (filmes[i].nota >= 8){
+        if (lista[i].nota >= 8){
             selo = "<img class = 'estrelaDestaque' src='assets/2117160.webp'>Recomendado"
         }
         else{
@@ -32,13 +32,13 @@ function mostrarFilmes(filmes){
 
         catalogo.innerHTML += `
             <div class="filme">
-                <img class="poster" src="${filmes[i].poster}">
+                <img class="poster" src="${lista[i].poster}">
                 <div class="informações">
                     <div>
-                        <h3 class=" tituloPoster">${filmes[i].titulo}</h3>
-                        <span class="ano">${filmes[i].ano}</span>
-                        <span class="genero">${filmes[i].genero}</span>
-                        <span class="nota">Nota: ${filmes[i].nota}</span>
+                        <h3 class=" tituloPoster">${lista[i].titulo}</h3>
+                        <span class="ano">${lista[i].ano}</span>
+                        <span class="genero">${lista[i].genero}</span>
+                        <span class="nota">Nota: ${lista[i].nota}</span>
                     </div>
                     <div class="favoritosRecomendado">
                         <span class="seloRecomendado">${selo}</span>
@@ -47,6 +47,11 @@ function mostrarFilmes(filmes){
                 </div>
             </div>
         `
+    }
+    listaAtual = lista;
+    contador.innerText = "Total de filmes: " + lista.length;
+    if (lista.length === 0) {
+        catalogo.innerHTML = "<p>Nenhum filme encontrado</p>";
     }
 }
 mostrarFilmes(filmes);
@@ -71,15 +76,15 @@ filtro.addEventListener("change",function(){
     escolhaGenero = filtro.value;
     let resultado = [];
 
-    if(escolhaGenero == "todos"){
+    if(escolhaGenero === "todos"){
         mostrarFilmes(filmes)
     } else{
         for (let filme of filmes){
             if(filme.genero === escolhaGenero){
                 resultado.push(filme)
             }
-            mostrarFilmes(resultado)
         }
+        mostrarFilmes(resultado)
     }
 
 })
@@ -97,11 +102,11 @@ let contadorFavoritos = document.getElementById("contadorFavoritos");
 let listaFavoritos = document.getElementById("listaFavoritos");
 let limparFavoritos = document.getElementById("limparFavoritos");
 limparFavoritos.addEventListener("click",function(){
-    let arrayVazio =[];
-    favoritosFilmes = arrayVazio;
+    favoritosFilmes = [];
     listaFavoritos.innerHTML = ""
     contadorFavoritos.innerHTML =""
 })
+
 
 
 
