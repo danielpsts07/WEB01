@@ -7,7 +7,11 @@ let filmes = [
     {titulo: "obsessão", ano: 2026, genero: "terror", nota: 8.2, poster: "assets/obsessão.webp"},
     {titulo: "Toy Story 5", ano: 2026, genero: "animação", nota: 8.3, poster: "assets/toyStory5.jpeg"},
     {titulo: "Frankenstein", ano: 2025, genero: "terror", nota: 7.5, poster: "assets/frankenstein.jpg"},
-]
+];
+let favoritosFilmes = [];
+let listaAtual = []
+listaAtual = filmes
+
 let totalFilmes = filmes.length;
 let contador = document.getElementById("contador");
 contador.innerHTML += "Total de filmes: " + totalFilmes;
@@ -16,10 +20,10 @@ function mostrarFilmes(filmes){
     let catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
-    for (filme of filmes){
+    for (let i = 0; i < filmes.length;i++){
 
         let selo;
-        if (filme.nota >= 8){
+        if (filmes[i].nota >= 8){
             selo = "recomendado"
         }
         else{
@@ -28,15 +32,15 @@ function mostrarFilmes(filmes){
 
         catalogo.innerHTML += `
             <div class="filme">
-                <img class="poster" src="${filme.poster}">
-                <h3 class=" tituloPoster">${filme.titulo}</h3>
-                <span class="ano">${filme.ano}</span>
-                <span class="genero">${filme.genero}</span>
-                <span>${filme.nota}</span>
+                <img class="poster" src="${filmes[i].poster}">
+                <h3 class=" tituloPoster">${filmes[i].titulo}</h3>
+                <span class="ano">${filmes[i].ano}</span>
+                <span class="genero">${filmes[i].genero}</span>
+                <span>${filmes[i].nota}</span>
                 <span>${selo}</span>
+                <button onclick="favoritar(${i})">Favoritar</button>
             </div>
         `
-
     }
 }
 mostrarFilmes(filmes);
@@ -78,5 +82,35 @@ filtro.addEventListener("change",function(){
 let inverter = document.getElementById("inverter");
 inverter.addEventListener("click",function(){
     filmes.reverse()
-    mostrarFilmes(filmes)
+    mostrarFilmes(filmes);
 })
+
+
+
+let contadorFavoritos = document.getElementById("contadorFavoritos");
+let listaFavoritos = document.getElementById("listaFavoritos");
+let limparFavoritos = document.getElementById("limparFavoritos");
+limparFavoritos.addEventListener("click",function(){
+    let arrayVazio =[];
+    favoritosFilmes = arrayVazio;
+    listaFavoritos.innerHTML = ""
+    contadorFavoritos.innerHTML =""
+})
+
+
+
+function favoritar(i){
+    let titulo = listaAtual[i].titulo;
+    if (!favoritosFilmes.includes(titulo)){
+        favoritosFilmes.push(titulo)
+    }
+    contadorFavoritos.innerText = ""
+    contadorFavoritos.innerHTML = "Quantidade de favoritos: " + favoritosFilmes.length; 
+
+    listaFavoritos.innerHTML = ""
+    for (let filme of favoritosFilmes ){
+        listaFavoritos.innerHTML += `
+            <li>${filme}</li>
+        `
+    }
+}
