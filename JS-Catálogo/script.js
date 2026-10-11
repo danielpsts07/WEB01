@@ -73,3 +73,10 @@ filtro.addEventListener("change",function(){
     }
 
 })
+
+
+let inverter = document.getElementById("inverter");
+inverter.addEventListener("click",function(){
+    filmes.reverse()
+    mostrarFilmes(filmes)
+})
