@@ -12,7 +12,7 @@ let totalFilmes = filmes.length;
 let contador = document.getElementById("contador");
 contador.innerHTML += "Total de filmes: " + totalFilmes;
 
-function mostrarFilmes(){
+function mostrarFilmes(filmes){
     let catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
@@ -46,7 +46,7 @@ mostrarFilmes(filmes);
 let campoBusca = document.getElementById("busca")
 campoBusca.addEventListener("input",function(){
     let letra = campoBusca.value.toLowerCase()
-    resultado = [];
+    let resultado = [];
     for (let filme of filmes){
         if(filme.titulo.toLowerCase().includes(letra)){
             resultado.push(filme)
@@ -54,3 +54,22 @@ campoBusca.addEventListener("input",function(){
     }
     mostrarFilmes(resultado)
 });
+
+
+let filtro = document.getElementById("filtroGenero");
+filtro.addEventListener("change",function(){
+    escolhaGenero = filtro.value;
+    let resultado = [];
+
+    if(escolhaGenero == "todos"){
+        mostrarFilmes(filmes)
+    } else{
+        for (let filme of filmes){
+            if(filme.genero === escolhaGenero){
+                resultado.push(filme)
+            }
+            mostrarFilmes(resultado)
+        }
+    }
+
+})
