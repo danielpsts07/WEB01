@@ -30,20 +30,22 @@
     <section>
         <!--Posteres-->
         <h2 class="titulosSecoes" id="tituloPrincipal">Catálogo:</h2>
-        <span id="contador"></span><br>
-        <input type="text" id="busca" placeholder="Buscar filmes...">
-        <select id="filtroGenero">
-            <option value="todos">Todos</option>
-            <option value="ficção">Ficção</option>
-            <option value="ação">Ação</option>
-            <option value="comédia">Comédia</option>
-            <option value="animação">Animação</option>
-            <option value="terror">Terror</option>
-        </select>
-        <button id="inverter">inverter</button>
+        <div class="pesquisaFilmes">
+            <span id="contador"></span><br>
+            <input type="text" id="busca" placeholder="Buscar filmes...">
+            <select id="filtroGenero">
+                <option value="todos">Todos</option>
+                <option value="ficção">Ficção</option>
+                <option value="ação">Ação</option>
+                <option value="comédia">Comédia</option>
+                <option value="animação">Animação</option>
+                <option value="terror">Terror</option>
+            </select>
+            <button id="inverter">inverter</button>
+        </div>
         <section id="catalogo"></section>
-        <button id="limparFavoritos">Limpar Favoritos</button>
         <section id="seçãoFavoritos">
+            <button id="limparFavoritos">Limpar Favoritos</button>
             <span id="contadorFavoritos"></span>
             <ul id="listaFavoritos"></ul>
         </section>

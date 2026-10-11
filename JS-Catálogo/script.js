@@ -1,12 +1,12 @@
 let filmes = [
-    {titulo: "interstellar", ano: 2014, genero: "ficção", nota: 8.7, poster: "assets/interstellar.jpg"},
-    {titulo: "Homem-Aranha: Sem Volta para Casa", ano: 2021, genero: "ação", nota: 8.1, poster: "assets/homemaranhasemvolta.png"},
-    {titulo: "Vingadores Ultimato", ano: 2019, genero: "ação", nota: 8.4, poster: "assets/VingadoresUltimato"},
-    {titulo: "Minha mãe é uma Peça 3", ano: 2019, genero: "comédia", nota: 7.1, poster: "assets/minhaMãePeça3.jpg"},
-    {titulo: "carros 3", ano: 2017, genero: "animação", nota: 6.7, poster: "assets/carros3.jpg"},
-    {titulo: "obsessão", ano: 2026, genero: "terror", nota: 8.2, poster: "assets/obsessão.webp"},
-    {titulo: "Toy Story 5", ano: 2026, genero: "animação", nota: 8.3, poster: "assets/toyStory5.jpeg"},
-    {titulo: "Frankenstein", ano: 2025, genero: "terror", nota: 7.5, poster: "assets/frankenstein.jpg"},
+    {titulo: "interstellar", ano: 2014, genero: "Ficção", nota: 8.7, poster: "assets/interstellar.jpg"},
+    {titulo: "Homem-Aranha: Sem Volta para Casa", ano: 2021, genero: "Ação", nota: 8.1, poster: "assets/homemaranhasemvolta.png"},
+    {titulo: "Vingadores Ultimato", ano: 2019, genero: "Ação", nota: 8.4, poster: "assets/VingadoresUltimato"},
+    {titulo: "Minha mãe é uma Peça 3", ano: 2019, genero: "Comédia", nota: 7.1, poster: "assets/minhaMãePeça3.jpg"},
+    {titulo: "carros 3", ano: 2017, genero: "Animação", nota: 6.7, poster: "assets/carros3.jpg"},
+    {titulo: "obsessão", ano: 2026, genero: "Terror", nota: 8.2, poster: "assets/obsessão.webp"},
+    {titulo: "Toy Story 5", ano: 2026, genero: "Animação", nota: 8.3, poster: "assets/toyStory5.jpeg"},
+    {titulo: "Frankenstein", ano: 2025, genero: "Terror", nota: 7.5, poster: "assets/frankenstein.jpg"},
 ];
 let favoritosFilmes = [];
 let listaAtual = []
@@ -24,7 +24,7 @@ function mostrarFilmes(filmes){
 
         let selo;
         if (filmes[i].nota >= 8){
-            selo = "recomendado"
+            selo = "<img class = 'estrelaDestaque' src='assets/2117160.webp'>Recomendado"
         }
         else{
             selo = "";
@@ -33,12 +33,18 @@ function mostrarFilmes(filmes){
         catalogo.innerHTML += `
             <div class="filme">
                 <img class="poster" src="${filmes[i].poster}">
-                <h3 class=" tituloPoster">${filmes[i].titulo}</h3>
-                <span class="ano">${filmes[i].ano}</span>
-                <span class="genero">${filmes[i].genero}</span>
-                <span>${filmes[i].nota}</span>
-                <span>${selo}</span>
-                <button onclick="favoritar(${i})">Favoritar</button>
+                <div class="informações">
+                    <div>
+                        <h3 class=" tituloPoster">${filmes[i].titulo}</h3>
+                        <span class="ano">${filmes[i].ano}</span>
+                        <span class="genero">${filmes[i].genero}</span>
+                        <span class="nota">Nota: ${filmes[i].nota}</span>
+                    </div>
+                    <div class="favoritosRecomendado">
+                        <span class="seloRecomendado">${selo}</span>
+                        <button class ="btnFavoritar" onclick="favoritar(${i})">Favoritar</button>
+                    </div>
+                </div>
             </div>
         `
     }
